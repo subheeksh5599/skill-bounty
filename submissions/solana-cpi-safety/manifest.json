@@ -1,0 +1,31 @@
+{
+  "name": "solana-cpi-safety",
+  "repo": "https://github.com/subheeksh5599/solana-cpi-safety",
+  "live_demo": "https://site-seven-ochre-61.vercel.app",
+  "description": "Detect and prevent four classes of Solana CPI vulnerabilities with five runnable PoCs",
+  "author": "subheeksh5599",
+  "license": "MIT",
+  "categories": ["security", "audit", "cpi"],
+  "commands": ["/audit-cpi"],
+  "agents": ["cpi-auditor"],
+  "sub_skills": [
+    "cpi-return-data-spoofing",
+    "arbitrary-cpi",
+    "account-reload",
+    "pda-cpi-signing",
+    "poc-harness",
+    "cpi-checklist"
+  ],
+  "vulnerability_classes": [
+    "return-data-spoofing",
+    "arbitrary-cpi",
+    "stale-account-after-cpi",
+    "non-canonical-pda-signing"
+  ],
+  "pocs": 5,
+  "test_cases": 18,
+  "requires": {
+    "node": ">=20",
+    "anchor_optional": "1.0.2"
+  }
+}
